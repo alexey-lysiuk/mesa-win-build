@@ -1,3 +1,6 @@
 [submodule "mesa"]
 	path = mesa
 	url = https://cgit.freedesktop.org/mesa/mesa/
+[submodule "llvm/src"]
+	path = llvm/src
+	url = http://llvm.org/git/llvm.git
