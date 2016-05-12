@@ -1,2 +1,4 @@
+/llvm/build/
+/llvm/dist/
 /tmp/
 *.pyc
