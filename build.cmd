@@ -64,6 +64,14 @@ cd ..\..
 
 cd mesa
 python.exe ..\tools\scripts\scons.py build=release llvm=yes MSVC_VERSION=14.0 %*
+cd ..
+
+if not exist bin (
+    md bin
+)
+
+xcopy mesa\build\windows-x86\gallium\targets\libgl-gdi\opengl32.dll bin /D /Y
+xcopy mesa\build\windows-x86\compiler\glsl\glsl_compiler.exe bin /D /Y
 
 popd
 
