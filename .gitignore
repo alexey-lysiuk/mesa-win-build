@@ -1,5 +1,11 @@
 /bin/
+/dxtn/bin/
+/dxtn/build/
 /llvm/build/
 /llvm/dist/
 /tmp/
 *.pyc
+*.suo
+*.vcxproj.user
+*.vc.db
+*.vc.opendb
