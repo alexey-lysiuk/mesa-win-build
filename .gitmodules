@@ -4,3 +4,6 @@
 [submodule "llvm/src"]
 	path = llvm/src
 	url = http://llvm.org/git/llvm.git
+[submodule "dxtn/src"]
+	path = dxtn/src
+	url = https://cgit.freedesktop.org/~mareko/libtxc_dxtn/
