@@ -105,18 +105,7 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ModuleDefinitionFile>$(SolutionDir)dxtn.def</ModuleDefinitionFile>
     </Link>
-    <PostBuildEvent>
-      <Command>@echo off
-
-cd "$(SolutionDir)"
-
-if not exist bin (
-    md bin
-)
-
-xcopy "$(TargetPath)" bin /D /Y
-</Command>
-    </PostBuildEvent>
+    <PostBuildEvent />
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
@@ -134,18 +123,7 @@ xcopy "$(TargetPath)" bin /D /Y
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ModuleDefinitionFile>$(SolutionDir)dxtn.def</ModuleDefinitionFile>
     </Link>
-    <PostBuildEvent>
-      <Command>@echo off
-
-cd "$(SolutionDir)"
-
-if not exist bin (
-    md bin
-)
-
-xcopy "$(TargetPath)" bin /D /Y
-</Command>
-    </PostBuildEvent>
+    <PostBuildEvent />
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
@@ -167,18 +145,7 @@ xcopy "$(TargetPath)" bin /D /Y
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ModuleDefinitionFile>$(SolutionDir)dxtn.def</ModuleDefinitionFile>
     </Link>
-    <PostBuildEvent>
-      <Command>@echo off
-
-cd "$(SolutionDir)"
-
-if not exist bin (
-    md bin
-)
-
-xcopy "$(TargetPath)" bin /D /Y
-</Command>
-    </PostBuildEvent>
+    <PostBuildEvent />
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
@@ -200,18 +167,7 @@ xcopy "$(TargetPath)" bin /D /Y
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ModuleDefinitionFile>$(SolutionDir)dxtn.def</ModuleDefinitionFile>
     </Link>
-    <PostBuildEvent>
-      <Command>@echo off
-
-cd "$(SolutionDir)"
-
-if not exist bin (
-    md bin
-)
-
-xcopy "$(TargetPath)" bin /D /Y
-</Command>
-    </PostBuildEvent>
+    <PostBuildEvent />
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="src\txc_compress_dxtn.c" />
