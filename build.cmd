@@ -98,7 +98,7 @@ popd
     )
 
     xcopy mesa\build\windows-%MESA_ARCH%\gallium\targets\libgl-gdi\opengl32.dll %BIN_DIR% /D /Y
-    xcopy mesa\build\windows-%MESA_ARCH%\compiler\glsl\glsl_compiler.exe %BIN_DIR% /D /Y
+    xcopy mesa\build\windows-%MESA_ARCH%\compiler\glsl_compiler.exe %BIN_DIR% /D /Y
     xcopy dxtn\build\%VS_ARCH%\Release\dxtn.dll %BIN_DIR% /D /Y
 
     7z.exe a bin\mesa3d-%MESA_VERSION%-%1.7z -y -t7z -mx=9 -ms=off .\bin\%1\*.* .\mesa\docs\VERSIONS
