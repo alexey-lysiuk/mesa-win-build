@@ -63,6 +63,7 @@ popd
     "%~dp0\tools\cmake\bin\cmake.exe" ^
         -A %VS_ARCH% ^
         -T v140_xp ^
+        -DCMAKE_BUILD_TYPE=Release ^
         -DCMAKE_INSTALL_PREFIX=%LLVM% ^
         -DLLVM_TARGETS_TO_BUILD=X86 ^
         -DLLVM_INCLUDE_DOCS=NO ^
